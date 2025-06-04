@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 * 🔗 **Solution URL:** [GitHub Repo](https://github.com/Bensolve/product-preview-card-component-main)
-* 🌐 **Live Site URL:** [Live Demo on Netlify](https://your-live-site-url.netlify.app)
+* 🌐 **Live Site URL:** [Live Demo on Netlify](https://product-preview-card-component-main-s.netlify.app)
 
 ---
 
