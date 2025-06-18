@@ -1,21 +1,17 @@
 :root {
-    /* Primary Colors */
-    --green-500: hsl(158, 36%, 37%);
-    --green-700: hsl(158, 42%, 18%);
-
-    /* Neutral Colors */
-    --black: hsl(212, 21%, 14%);
-    --grey: hsl(228, 12%, 48%);
-    --cream: hsl(30, 38%, 92%);
-    --white: hsl(0, 0%, 100%);
+    --green-500: hsl(158deg 36% 37%);
+    --green-700: hsl(158deg 42% 18%);
+    --black: hsl(212deg 21% 14%);
+    --grey: hsl(228deg 12% 48%);
+    --cream: hsl(30deg 38% 92%);
+    --white: hsl(0deg 0% 100%);
 
     /* Typography */
     --font-body: 'Montserrat', sans-serif;
     --font-heading: 'Fraunces', serif;
-
     --font-size-body: 0.875rem
 
-    /* Font Weights */
+    /* Font Weights */;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 }
@@ -34,8 +30,10 @@ body {
     font-family: var(--font-body);
     background-color: var(--cream);
     font-size: var(--font-body);
+
     /* Cream */
     color: var(--black);
+
     /* Black */
 }
 
@@ -64,7 +62,6 @@ button {
 }
 
 .card__content {
-
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -73,6 +70,7 @@ button {
 
 .card__inner {
     padding: 2rem;
+
     /* control padding here only */
     display: flex;
     flex-direction: column;
@@ -129,17 +127,20 @@ button {
     border-radius: 0.5rem;
     padding: 0.75rem 1.5rem;
     font-weight: var(--font-weight-bold);
-
-
     cursor: pointer;
-    /* transition: background-color 0.3s ease; */
+   
 }
 
 .card__button:hover {
     background-color: var(--green-700);
 }
 
-@media (min-width: 49.125em) {
+@media (prefers-reduced-motion: no-preference) {
+    .card__button {
+        transition: background-color 0.3s ease;
+    } }
+
+@media (width >= 49.125em) {
     .card {
         display: flex;
         max-width: 42.5rem;
@@ -148,6 +149,7 @@ button {
     .card__image {
         flex: 1;
         aspect-ratio: 1 / 1;
+
         /* or 3 / 4 depending on the image */
         overflow: hidden;
     }
@@ -163,10 +165,13 @@ button {
         flex: 1;
 
     }
+
     .card__inner{
         padding: 2rem;
+
         /* margin: 2rem; */
     }
+
     .card__title{
         line-height: 1.1;
         max-width: 74%;
