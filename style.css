@@ -135,10 +135,19 @@ button {
     background-color: var(--green-700);
 }
 
+/* Reduce motion: turn off transition completely */
+@media (prefers-reduced-motion: reduce) {
+    .card__button {
+        transition: none;
+    }
+}
+
+/* Normal users can see transitions */
 @media (prefers-reduced-motion: no-preference) {
     .card__button {
         transition: background-color 0.3s ease;
-    } }
+    }
+}
 
 @media (width >= 49.125em) {
     .card {
