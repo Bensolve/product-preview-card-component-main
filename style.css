@@ -58,7 +58,7 @@ button {
 .card {
     background-color: var(--white);
     margin: 1.5rem auto;
-    max-width: 343px;
+    max-width: 21.44rem;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -132,17 +132,17 @@ button {
 
 
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
 }
 
 .card__button:hover {
     background-color: var(--green-700);
 }
 
-@media (min-width: 786px) {
+@media (min-width: 49.125em) {
     .card {
         display: flex;
-        max-width: 680px;
+        max-width: 42.5rem;
     }
 
     .card__image {
