@@ -130,19 +130,7 @@ button {
     cursor: pointer;
 }
 
-/* Reduce motion: no animation */
-@media (prefers-reduced-motion: reduce) {
-    .card__button {
-        transition: none !important;
-    }
-}
 
-/* Normal motion: enable smooth hover */
-@media (prefers-reduced-motion: no-preference) {
-    .card__button {
-        transition: background-color 0.3s ease;
-    }
-}
 
 .card__button:hover {
     background-color: var(--green-700);
